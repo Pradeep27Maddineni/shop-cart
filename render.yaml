@@ -4,6 +4,7 @@ services:
     runtime: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn ecommerce.wsgi:application --bind 0.0.0.0:$PORT
+
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: ecommerce.settings
@@ -13,6 +14,8 @@ services:
         value: your-paytm-mid
       - key: MERCHANT_KEY
         value: your-paytm-merchant-key
-        - key: DJANGO_ALLOWED_HOSTS
+
+      - key: DJANGO_ALLOWED_HOSTS
         value: shop-cart-gbot.onrender.com
+
 
