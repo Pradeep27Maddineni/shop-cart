@@ -19,7 +19,9 @@ A fully functional e-commerce platform built with Django. Features a complete sh
 - **Other:** CSRF protection, message framework, static/media management
 
 ## 📷 Screenshots
-(Add images here)
+<img width="1432" alt="Screenshot 2025-06-30 at 7 38 10 PM" src="https://github.com/user-attachments/assets/a23e4355-8617-48ac-b1b6-6861d2c8ea20" />
+<img width="1432" alt="Screenshot 2025-06-30 at 7 38 25 PM" src="https://github.com/user-attachments/assets/56e179d4-fd97-4d3b-8341-00578e4e3360" />
+<img width="1432" alt="Screenshot 2025-06-30 at 7 38 38 PM" src="https://github.com/user-attachments/assets/5b8eb998-b4a8-479a-a631-10ff48b15a9f" />
 
 ## 🔧 Setup Instructions
 1. Clone the repo
@@ -29,5 +31,5 @@ A fully functional e-commerce platform built with Django. Features a complete sh
 5. Run server: `python manage.py runserver`
 
 ## 🙌 Credits
-Developed by [Your Name]
+Developed by Pradeep Maddineni
 
