@@ -13,3 +13,6 @@ services:
         value: your-paytm-mid
       - key: MERCHANT_KEY
         value: your-paytm-merchant-key
+        - key: DJANGO_ALLOWED_HOSTS
+        value: shop-cart-gbot.onrender.com
+
