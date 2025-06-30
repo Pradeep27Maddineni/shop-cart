@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import os
+SECRET_KEY = os.environ.get("SECRET_KEY", "insecure-default-for-dev")
 
 from pathlib import Path
 from django.contrib import messages

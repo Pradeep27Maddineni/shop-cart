@@ -5,5 +5,13 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn ecommerce.wsgi:application
     envVars:
-      DJANGO_SETTINGS_MODULE:env.DJANGOSETTNGSKEY,
-      PYTHON_VERSION:env.PYTHONVERSIONKEY
+      - key: DJANGO_SETTINGS_MODULE
+        value: ecommerce.settings
+      - key: PYTHON_VERSION
+        value: 3.9
+      - key: SECRET_KEY
+        value: {{ADD_YOUR_SECRET_KEY_HERE}}
+      - key: MERCHANT_KEY
+        value: {{ADD_YOUR_PAYTM_MERCHANT_KEY_HERE}}
+      - key: MID
+        value: {{YOUR_PAYTM_MID}}
