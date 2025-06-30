@@ -3,15 +3,13 @@ services:
     name: shop-cart-django
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn ecommerce.wsgi:application
+    startCommand: gunicorn ecommerce.wsgi:application --bind 0.0.0.0:$PORT
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: ecommerce.settings
-      - key: PYTHON_VERSION
-        value: 3.9
       - key: SECRET_KEY
-        value: {{ADD_YOUR_SECRET_KEY_HERE}}
-      - key: MERCHANT_KEY
-        value: {{ADD_YOUR_PAYTM_MERCHANT_KEY_HERE}}
+        value: your-secret-key-here
       - key: MID
-        value: {{YOUR_PAYTM_MID}}
+        value: your-paytm-mid
+      - key: MERCHANT_KEY
+        value: your-paytm-merchant-key
